@@ -34,9 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void createNewUser() {
-
         if (!(userName.getText().toString().equals("")) && !(userEmail.getText().toString().equals("")) && !(userPassword.getText().toString().equals(""))) {
-
             intent = new Intent(SignUpActivity.this, FrontPageActivity.class);
             startActivity(intent);
         } else {
