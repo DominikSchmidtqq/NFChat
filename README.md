@@ -36,6 +36,8 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 Dominik Schmidt, Nick Shekelle
 
 [https://github.com/DominikSchmidtqq](https://github.com/DominikSchmidtqq)
+[https://github.com/nickshekelle](https://github.com/nickshekelle)
+
 
 ## Contributing
 
