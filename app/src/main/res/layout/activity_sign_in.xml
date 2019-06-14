@@ -65,6 +65,7 @@
                     android:textSize="15sp" />
 
                 <EditText
+                    android:id="@+id/userNameText"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
@@ -93,6 +94,7 @@
                         android:textSize="15sp" />
 
                     <EditText
+                        android:id="@+id/passwordText"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
@@ -111,6 +113,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_below="@+id/line1"
@@ -142,6 +145,7 @@
         >
 
         <Button
+            android:id="@+id/signUpButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -151,6 +155,7 @@
             android:fontFamily="sans-serif-medium"/>
 
         <Button
+            android:id="@+id/forgotPasswordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
