@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
-import android.os.*;
 
 public class SignInActivity extends AppCompatActivity {
     private EditText userName;
@@ -23,9 +21,9 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        userName = (EditText) findViewById(R.id.userNameText);
-        password = (EditText) findViewById(R.id.passwordText);
-        loginButton = (Button) findViewById(R.id.loginButton);
+        userName = (EditText) findViewById(R.id._userNameText);
+        password = (EditText) findViewById(R.id.emailText);
+        loginButton = (Button) findViewById(R.id.signInButton);
         signUpButton = (Button) findViewById(R.id.signUpButton);
         forgotPasswordButton = (Button) findViewById(R.id.forgotPasswordButton);
 
@@ -36,6 +34,15 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
+
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signUp();
+            }
+        });
+
+
     }
 
     private void validate(String _userName, String _userPassword) {
@@ -45,5 +52,10 @@ public class SignInActivity extends AppCompatActivity {
         } else {
 
         }
+    }
+
+    private void signUp() {
+        Intent signUpIntent = new Intent(SignInActivity.this, SignUpActivity.class);
+        startActivity(signUpIntent);
     }
 }
