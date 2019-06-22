@@ -42,7 +42,6 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void validate(String _userName, String _userPassword) {
