@@ -5,9 +5,8 @@ Distributed Android Chat App with a signature NFC feature for automatically crea
 
 
 [![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
-One to two paragraph statement about your product and what it does.
+NFChat is a lightweight Distributed Android Messaging App with a signature NFC feature that makes creating group chats as easy as simply holding your phones together.
 
 ![](header.png)
 
@@ -33,10 +32,9 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Meta
 
-Dominik Schmidt, Nick Shekelle
+Dominik Schmidt
 
 [https://github.com/DominikSchmidtqq](https://github.com/DominikSchmidtqq)
-[https://github.com/nickshekelle](https://github.com/nickshekelle)
 
 
 ## Contributing
