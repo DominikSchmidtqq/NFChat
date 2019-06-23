@@ -1,42 +1,62 @@
 package com.example.distributednfcchatapp.Model;
 
 public class User {
-    private String uuid;
-    private String userName;
-    private String profilePictureURL;
 
+    private String id;
+    private String username;
+    private String imageURL;
+    private String status;
+    private String search;
 
-    public User(String uuid, String userName, String profilePictureURL) {
-        this.uuid = uuid;
-        this.userName = userName;
-        this.profilePictureURL = profilePictureURL;
+    public User(String id, String username, String imageURL, String status, String search) {
+        this.id = id;
+        this.username = username;
+        this.imageURL = imageURL;
+        this.status = status;
+        this.search = search;
     }
 
     public User() {
 
     }
 
-    public String getUuid() {
-        return uuid;
+    public String getId() {
+        return id;
     }
 
-    public void setUuid(String uuid) {
-        this.uuid = uuid;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getProfilePictureURL() {
-        return profilePictureURL;
+    public String getImageURL() {
+        return imageURL;
     }
 
-    public void setProfilePictureURL(String profilePictureURL) {
-        this.profilePictureURL = profilePictureURL;
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getSearch() {
+        return search;
+    }
+
+    public void setSearch(String search) {
+        this.search = search;
     }
 }

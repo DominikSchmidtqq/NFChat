@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@drawable/grad_bg"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgView_Logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:tint="@color/white"
+            android:src="@drawable/nfc_logo"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relLay1"
+            android:layout_below="@+id/imgView_Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NFChat"
+                android:textSize="48dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"
+
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_signUp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"  >
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            android:text="Sign up"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Sign In"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

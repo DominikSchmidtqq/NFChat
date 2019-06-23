@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.distributednfcchatapp.Model.User;
 import com.example.distributednfcchatapp.R;
 
@@ -16,18 +17,18 @@ import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
-    private Context cContext;
+    private Context mContext;
     private List<User> mUsers;
 
-    public UserAdapter(Context cContext, List<User> cUsers) {
-        this.cContext = cContext;
+    public UserAdapter(Context mContext, List<User> cUsers) {
+        this.mContext = mContext;
         this.mUsers = cUsers;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(cContext).inflate(R.layout.user_item, viewGroup, false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.user_item, viewGroup, false);
 
         return new UserAdapter.ViewHolder(view);
     }
@@ -35,12 +36,12 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         User user = mUsers.get(i);
-        viewHolder.username.setText(user.getUserName());
+        viewHolder.username.setText(user.getUsername());
 
-        if (user.getProfilePictureURL().equals("default")) {
+        if (user.getImageURL().equals("default")) {
             viewHolder.profile_picture.setImageResource(R.mipmap.ic_launcher);
         } else {
-
+            Glide.with(mContext).load(user.getImageURL()).into(viewHolder.profile_picture);
         }
     }
 
