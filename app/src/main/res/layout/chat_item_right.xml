@@ -2,7 +2,9 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:padding="8dp"
+    android:padding="2dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
     android:layout_height="wrap_content">
 
     <RelativeLayout
@@ -23,10 +25,14 @@
             android:background="@drawable/background_right"
             android:text="hello"
             android:layout_alignParentEnd="true"
+            android:fontFamily="sans-serif-light"
             android:id="@+id/show_message"
             android:textSize="18sp"
             android:textColor="#fff"
-            android:padding="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:layout_alignParentRight="true" />
 
         <TextView

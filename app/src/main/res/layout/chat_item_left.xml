@@ -2,12 +2,14 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300dp"
-    android:padding="8dp"
+    android:padding="2dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
     android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:id="@+id/profile_image"
         android:src="@mipmap/ic_launcher"/>
 
@@ -17,9 +19,18 @@
         android:layout_toRightOf="@id/profile_image"
         android:layout_marginLeft="5dp"
         android:text="hello"
+
         android:id="@+id/show_message"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerVertical="true"
         android:textSize="18sp"
-        android:padding="8dp"
+
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="#5A5555"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
         android:background="@drawable/background_left"/>
 
     <TextView

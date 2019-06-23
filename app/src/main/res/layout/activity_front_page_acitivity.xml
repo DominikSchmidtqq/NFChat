@@ -20,19 +20,32 @@
             app:popupTheme="@style/MenuStyle">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:id="@+id/profile_image"/>
+                android:layout_height="30dp" />
 
             <TextView
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/username"
-                android:textSize="18sp"
+                android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
                 android:textColor="#fff"
-                android:textStyle="bold"
-                android:layout_marginStart="25dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imgView_Logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nfc_logo"
+                    android:tint="@color/white" />
+
+
 
         </android.support.v7.widget.Toolbar>
 

@@ -3,16 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@drawable/grad_bg"
     android:padding="8dp"
     tools:context=".Fragments.ProfileFragment">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
+        android:background="@color/transparent"
         android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:padding="8dp"
+            android:background="@color/transparent"
             android:layout_height="wrap_content">
 
             <TextView
